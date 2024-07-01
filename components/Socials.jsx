@@ -11,23 +11,15 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "/",
-    name: <RiYoutubeFill />,
-  },
-  {
-    path: "/",
+    path: "https://www.linkedin.com/in/harsh-mistry7/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/harshmistry7",
     name: <RiGithubFill />,
   },
   {
-    path: "/",
-    name: <RiFacebookFill />,
-  },
-  {
-    path: "/",
+    path: "https://www.instagram.com/harxh.bytes?igsh=MW0yN2RnMmM3dGg4cA==",
     name: <RiInstagramFill />,
   },
 ];

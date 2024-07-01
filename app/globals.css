@@ -15,7 +15,7 @@
       --primary-foreground: 300 0% 100%;
       --secondary: 240 19% 16%;
       --secondary-foreground: 300 0% 100%;
-      --tertiary : 27 82% 98%;
+      --tertiary: 27 82% 98%;
       --muted: 60 4.8% 95.9%;
       --muted-foreground: 237 13% 40%;
       --accent: 237 9% 96%;
@@ -39,7 +39,7 @@
       --primary-foreground: 300 0% 100%;
       --secondary: 240 19% 16%;
       --secondary-foreground: 300 0% 100%;
-      --tertiary : 237 22% 20%;
+      --tertiary: 237 22% 20%;
       --muted: 12 6.5% 15.1%;
       --muted-foreground: 237 13% 63%;
       --accent: 240 19% 16%;
@@ -66,11 +66,33 @@
   @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
 }
 
+.h2{
+  @apply text-4xl font-bold;
+}
 
-.subtitle{
+.h3{
+  @apply text-3xl font-bold;
+}
+
+.h4{
+  @apply text-[22px] font-semibold;
+}
+
+.subtitle {
   @apply text-muted-foreground text-lg mb-8 font-light;
 }
 
-.badge{
-  @apply z-10 w-[200px] bg-white shadow-2xl h-[68px] dark:backdrop:blur-[44px] p-4 rounded-[10px] flex items-center gap-x-4   ;
+.section-title {
+  @apply text-4xl font-bold relative w-max flex items-center justify-between gap-x-3 before:bg-dots_light before:dark:bg-dots_dark before:bg-center
+  before:w-[24px] before:h-[24px] before:bg-no-repeat;
+}
+
+.badge {
+  @apply z-10 w-[200px] bg-white shadow-2xl h-[68px] dark:backdrop:blur-[44px] p-4 rounded-[10px] flex items-center gap-x-4;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet{
+    @apply bg-primary
 }

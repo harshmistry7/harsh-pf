@@ -24,7 +24,7 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="h1">Hello, My Name is Ryan Davis</h1>
+            <h1 className="h1">Hello, My Name is Harsh Mistry</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               Brief description with insights into myself, my vocational
               journey, and what i engage in professionaly.
@@ -36,9 +36,11 @@ const Hero = () => {
                   Contact me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
-                Download CV <Download size={18} />
-              </Button>
+              <a href="/hero/Harsh_Resume.pdf" download="Harsh_Mistry_Resume.pdf">
+                <Button variant="secondary" className="gap-x-2">
+                  Download CV <Download size={18} />
+                </Button>
+              </a>
             </div>
             {/* socials */}
             <Socials
@@ -50,25 +52,25 @@ const Hero = () => {
           <div className="hidden xl:flex relative">
             {/* Badge1 */}
             <Badge
-              containerStyles='absolute top-[24%] -left-[5rem]'
+              containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
               endCoutNum={3}
               badgeText="Years of Experience"
             />
             {/* badge 2 */}
             <Badge
-              containerStyles='absolute top-[80%] -left-[9rem]'
+              containerStyles="absolute top-[80%] -left-[9rem]"
               icon={<RiTodoFill />}
               endCoutNum={6}
-              endCoutText='k'
+              endCoutText="k"
               badgeText="Finished Projects"
             />
             {/* badge 3 */}
             <Badge
-              containerStyles='absolute top-[55%] -left-[35rem]'
+              containerStyles="absolute top-[55%] -left-[35rem]"
               icon={<RiTeamFill />}
               endCoutNum={9}
-              endCoutText='k'
+              endCoutText="k"
               badgeText="Happy Clients"
             />
             <div
