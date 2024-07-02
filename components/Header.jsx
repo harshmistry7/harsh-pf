@@ -11,26 +11,26 @@ import Logo from "./ui/Logo";
 import { usePathname } from "next/navigation";
 
 const Header = () => {
-  const [header, setHeader] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    const scrollYPos = window.addEventListener("Scroll", () => { 
-      window.scrollY > 50 ? setHeader(true) : setHeader(false);
-    });
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Update state based on scroll position
+    };
 
-    //remove
-    return () => window.removeEventListener("scroll", scrollYPos);
-  });
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header
-      className={`${
-        header 
-          ? `py-4 bg-white shadow-lg dark:bg-black`
-          : `py-6 dark:bg-transparent `
-      } sticky top-0 z-30 transition-all ${pathname === '/' && 'bg-[#fef9f5]'}`}
-    >
+    className={`
+      ${isScrolled ? 'py-4 bg-white shadow-lg dark:bg-accent ' : 'py-6 dark:bg-transparent'} 
+      ${pathname === '/' ? 'bg-[#fef9f5]' : ''} sticky top-0 z-30 transition-all
+    `}
+  >
       <div className="container mx-auto ">
         <div className="flex justify-between item-center">
           <Logo />
