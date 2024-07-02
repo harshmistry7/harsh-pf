@@ -66,15 +66,15 @@
   @apply text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px] font-bold;
 }
 
-.h2{
+.h2 {
   @apply text-4xl font-bold;
 }
 
-.h3{
+.h3 {
   @apply text-3xl font-bold;
 }
 
-.h4{
+.h4 {
   @apply text-[22px] font-semibold;
 }
 
@@ -93,6 +93,21 @@
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet{
-    @apply bg-primary
+  .swiper-pagination-bullet {
+  @apply bg-primary;
+}
+
+body, html {
+  /* overscroll-behavior: contain; Prevent rubber-banding effect */
+  height: 100vh; /* Set viewport height */
+  margin: 0;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
 }

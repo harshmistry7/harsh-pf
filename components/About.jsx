@@ -34,7 +34,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Pursuing Bachelor In IT",
+    text: "Pursuing B.Tech In IT",
   },
   {
     icon: <HomeIcon size={20} />,
@@ -47,19 +47,19 @@ const QualificationData = [
     title: "education",
     data: [
       {
-        university: "Example University",
-        qualalification: "Bachelor of Science",
-        years: "2015-2018",
+        university: "J. H. Ambani, Surat",
+        qualalification: "10th",
+        years: "2020",
       },
       {
-        university: "Example University",
-        qualalification: "Bachelor of Science",
-        years: "2015-2018",
+        university: "The Radiant International School, Surat",
+        qualalification: "12th Science",
+        years: "2022",
       },
       {
-        university: "Example University",
-        qualalification: "Bachelor of Science",
-        years: "2015-2018",
+        university: "A. D. Patel Institue of Technology, Anand (CVM University)",
+        qualalification: "Bachelor of Technology",
+        years: "2022-Present",
       },
     ],
   },
@@ -67,19 +67,19 @@ const QualificationData = [
     title: "Experience",
     data: [
       {
-        Company: "ABC Inc",
-        role: "Software Engineer",
-        years: "2015-2018",
+        Company: "SMS FOR YOU",
+        role: "Graphic Designer",
+        years: "2024-Present",
       },
       {
-        Company: "ABC Inc",
-        role: "Software Engineer",
-        years: "2015-2018",
+        Company: "Google DSC, ADIT",
+        role: "Design Co-Lead",
+        years: "2023-Present",
       },
       {
-        Company: "ABC Inc",
-        role: "Software Engineer",
-        years: "2015-2018",
+        Company: "Freelance",
+        role: "Web Developer",
+        years: "2023-Present",
       },
     ],
   },
@@ -96,10 +96,10 @@ const skillData = [
         name: "FrontEnd Web Devlopment",
       },
       {
-        name: "Graphic Design",
+        name: "JS and Frameworks",
       },
       {
-        name: "JS and Frameworks"
+        name: "Graphic Design"
       },
     ],
   },
@@ -110,13 +110,16 @@ const skillData = [
         imgPath: "/about/vscode.svg",
       },
       {
-        imgPath: "/about/vscode.svg",
+        imgPath: "/about/figma.svg",
       },
       {
-        imgPath: "/about/vscode.svg",
+        imgPath: "/about/vercel.svg",
       },
       {
-        imgPath: "/about/vscode.svg",
+        imgPath: "/about/notion.svg",
+      },
+      {
+        imgPath: "/about/adobe-illustrator.svg",
       },
     ],
   },
@@ -232,8 +235,8 @@ const About = () => {
                                     <div className="text-lg leading-none text-muted-foreground mb-4">
                                       {role}
                                     </div>
-                                    <div className="text-base font-medium">
-                                      {years}
+                                    <div className="text-base flex gap-x-4 font-medium">
+                                      <Calendar className='text-primary '/>{years}
                                     </div>
                                   </div>
                                 </div>
@@ -273,8 +276,8 @@ const About = () => {
                                     <div className="text-lg leading-none text-muted-foreground mb-4">
                                       {qualalification}
                                     </div>
-                                    <div className="text-base font-medium">
-                                      {years}
+                                    <div className="text-base flex gap-x-4 font-medium">
+                                      <Calendar className='text-primary '/>{years}
                                     </div>
                                   </div>
                                 </div>

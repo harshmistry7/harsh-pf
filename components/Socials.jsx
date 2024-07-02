@@ -1,9 +1,7 @@
 "ue client";
 import {
-  RiYoutubeFill,
   RiLinkedinFill,
   RiGithubFill,
-  RiFacebookFill,
   RiInstagramFill,
 } from "react-icons/ri";
 
@@ -29,7 +27,7 @@ const Socials = ({ containerStyles, iconsStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, index) => {
         return (
-          <Link href={icon.path} key={index}>
+          <Link href={icon.path} key={index} target="_blank">
             <div className={`${iconsStyles}`}>{icon.name}</div>
           </Link>
         );

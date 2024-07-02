@@ -1,4 +1,4 @@
-import { GanttChartSquare, Blocks, Gem } from "lucide-react";
+import { GanttChartSquare, Blocks, PenTool } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -12,19 +12,19 @@ const servicesData = [
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: "Web Design ",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, soluta?",
+      "I craft user-friendly and visually stunning websites that convert visitors into leads.  Let's create a website that perfectly reflects your brand identity.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Web Development ",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, soluta?",
+      "I bring websites to life, turning designs into functional and interactive experiences.  From complex web apps to seamless e-commerce solutions, I can handle it all.",
   },
   {
-    icon: <Gem size={72} strokeWidth={0.8} />,
-    title: "App Development ",
+    icon: <PenTool size={72} strokeWidth={0.8} />,
+    title: "Graphic Design ",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, soluta?",
+      "I create high-impact visual elements that elevate your brand.  Whether it's logos, social media graphics, or marketing materials, I'll help you tell your story visually.",
   },
 ];
 
