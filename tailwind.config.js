@@ -14,10 +14,10 @@ module.exports = {
       padding: "2rem",
     },
     screens: {
-      sm : '640px',
-      md : '768px',
-      lg : '1024px',
-      xl : '1400px',
+      sm: '640px', // Small screens (phones)
+      md: '768px', // Medium screens (tablets)
+      lg: '1024px', // Large screens (laptops)
+      xl: '1280px', // Extra large screens (desktops)
     },
     extend: {
       colors: {
