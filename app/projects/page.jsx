@@ -5,69 +5,55 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sed!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "next js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sed!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sed!",
-    link: "/",
-    github: "/",
-  },
-  {
     image: "/work/1.png",
     category: "next js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sed!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sed!",
-    link: "/",
-    github: "/",
+    name: "Digital Buissness",
+    description: "Your One-Stop Solution for Digital Transformation",
+    link: "https://digital-buisness.vercel.app/",
+    github: "https://github.com/harshmistry7/Digital-Buisness.git",
   },
   {
     image: "/work/2.png",
-    category: "fullstack",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sed!",
-    link: "/",
-    github: "/",
+    category: "react js",
+    name: "The Branded Sapiens ",
+    description: "Empowering Social Media Strategies for TBS, a Leading Marketing Agency",
+    link: "https://www.thebrandedsapiens.com/",
+    github: "https://github.com/harshmistry7/TBS.git",
+  },
+  {
+    image: "/work/3.png",
+    category: "HTML",
+    name: "Cyber Security Club ADIT",
+    description: "Your One-Stop Shop for Cybersecurity Resources",
+    link: "https://harshmistry7.github.io/cscadit/",
+    github: "https://github.com/harshmistry7/cscadit.git",
   },
   {
     image: "/work/4.png",
-    category: "fullstack",
-    name: "Nexa Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, sed!",
-    link: "/",
-    github: "/",
+    category: "next js",
+    name: "Portfolio Website",
+    description: "Your Online Portfolio Showcase",
+    link: "www.harshmistry.tech",
+    github: "https://github.com/harshmistry7/harsh-pf.git",
+  },
+  {
+    image: "/work/5.png",
+    category: "HTML",
+    name: "Zone",
+    description: "A Platform for Streamlining Drone Operations",
+    link: "https://harshmistry7.github.io/Zone/",
+    github: "https://github.com/harshmistry7/Zone.git",
+  },
+  {
+    image: "/work/6.png",
+    category: "HTML",
+    name: "Graphixcy",
+    description: "Your Visual Identity Architect",
+    link: "https://harshmistry7.github.io/resume/",
+    github: "https://github.com/harshmistry7/resume.git",
   },
 ];
+
 
 //remove category duplicates
 const uniqueCategories = [

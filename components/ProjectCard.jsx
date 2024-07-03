@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
         xl:dark:bg-work_project_bg_dark xl:bg-no-repeat overflow-hidden"
         >
           <Image
-            className="absolute bottom-0 shadow-2xl "
+            className="absolute bottom-0 shadow-2xl rounded-t-[12px] "
             src={project.image}
             width={247}
             height={250}
@@ -22,15 +22,17 @@ const ProjectCard = ({ project }) => {
             priority
           />
           {/* buttons */}
-          <div className='flex gap-x-4'>
+          <div className="flex gap-x-4">
             <Link
               href={project.link}
+              target="_blank"
               className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-200"
             >
               <Link2Icon className="text-white" />
             </Link>
             <Link
               href={project.github}
+              target="_blank"
               className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300"
             >
               <Github className="text-white" />
