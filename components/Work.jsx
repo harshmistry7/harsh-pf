@@ -46,7 +46,8 @@ const projectData = [
     name: "Portfolio Website",
     description: "Your Online Portfolio Showcase",
     link: "www.harshmistry.tech",
-    github: "https://github.com/harshmistry7/harsh-pf.git",
+    github: "",
+    
   },
   {
     image: "/work/5.png",

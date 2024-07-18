@@ -57,7 +57,7 @@ const QualificationData = [
         years: "2022",
       },
       {
-        university: "A. D. Patel Institue of Technology, Anand (CVM University)",
+        university: "A. D. Patel Institute of Technology, Anand (CVM University)",
         qualalification: "Bachelor of Technology",
         years: "2022-Present",
       },
