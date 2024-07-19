@@ -37,7 +37,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <a
-                href="/hero/Harsh_Resume.pdf"
+                href="/hero/Harsh_Mistry.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
