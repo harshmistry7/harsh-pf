@@ -27,6 +27,7 @@ const Form = () => {
       if (result.success) {
         setModalMessage("Your message has been sent successfully!");
         setIsSuccess(true);
+        form.reset();
       } else {
         setModalMessage(result.message || "Something went wrong. Please try again.");
         setIsSuccess(false);
