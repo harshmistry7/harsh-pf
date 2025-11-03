@@ -78,8 +78,8 @@ export default function RootLayout({ children }) {
     description:
       "Software Developer passionate about Full Stack Development, AI/ML, and Cloud-based solutions.",
     sameAs: [
-      "https://github.com/harshmistry04",
-      "https://www.linkedin.com/in/harsh-mistry04/",
+      "https://github.com/harshmistry7",
+      "https://www.linkedin.com/in/harsh-mistry7/",
       "https://harsh-mistry.vercel.app",
     ],
     worksFor: {
