@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://harsh-mistry.vercel.app
+
+# Sitemaps
+Sitemap: https://harsh-mistry.vercel.app/sitemap.xml

@@ -69,12 +69,12 @@ const QualificationData = [
       {
         Company: "SMS FOR YOU",
         role: "Graphic Designer",
-        years: "2024-Present",
+        years: "2024",
       },
       {
         Company: "Google DSC, ADIT",
         role: "Design Co-Lead",
-        years: "2023-Present",
+        years: "2023-2025",
       },
       {
         Company: "Freelance",

@@ -1,0 +1,68 @@
+// src/data/projectsData.js
+export const projectData = [
+  {
+    image: "/work/1.png",
+    category: "next js",
+    name: "Digital Business",
+    description: "Your One-Stop Solution for Digital Transformation",
+    link: "https://digital-buisness.vercel.app/",
+    github: "https://github.com/harshmistry7/Digital-Buisness.git",
+  },
+  {
+    image: "/work/4.png",
+    category: "next js",
+    name: "Portfolio Website",
+    description: "Your Online Portfolio Showcase",
+    link: "https://www.harshmistry.tech",
+    github: "",
+  },
+  {
+    image: "/work/5.png",
+    category: "HTML",
+    name: "Zone",
+    description: "A Platform for Streamlining Drone Operations",
+    link: "https://harshmistry7.github.io/Zone/",
+    github: "https://github.com/harshmistry7/Zone.git",
+  },
+  {
+    image: "/work/7.png",
+    category: "next js",
+    name: "Transformik",
+    description: "AI-Powered Solutions for Business Transformation",
+    link: "https://www.transformik.com/",
+    github: "",
+  },
+  {
+    image: "/work/8.png",
+    category: "react js",
+    name: "Nexcent",
+    description: "Empowering Local Businesses with Smart Digital Growth",
+    link: "https://www.transformik.com/",
+    github: "",
+  },
+  {
+    image: "/work/2.png",
+    category: "react js",
+    name: "The Branded Sapiens",
+    description:
+      "Empowering Social Media Strategies for TBS, a Leading Marketing Agency",
+    link: "https://www.thebrandedsapiens.com/",
+    github: "https://github.com/harshmistry7/TBS.git",
+  },
+  {
+    image: "/work/3.png",
+    category: "HTML",
+    name: "Cyber Security Club ADIT",
+    description: "Your One-Stop Shop for Cybersecurity Resources",
+    link: "https://harshmistry7.github.io/cscadit/",
+    github: "https://github.com/harshmistry7/cscadit.git",
+  },
+  {
+    image: "/work/6.png",
+    category: "HTML",
+    name: "Graphixcy",
+    description: "Your Visual Identity Architect",
+    link: "https://harshmistry7.github.io/resume/",
+    github: "https://github.com/harshmistry7/resume.git",
+  },
+];

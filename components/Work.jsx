@@ -65,6 +65,14 @@ const projectData = [
     link: "https://harshmistry7.github.io/resume/",
     github: "https://github.com/harshmistry7/resume.git",
   },
+  {
+    image: "/work/7.png",
+    category: "next js",
+    name: "Transformik",
+    description: "AI-Powered Solutions for Business Transformation",
+    link: "https://www.transformik.com/",
+    github: "",
+  },
 ];
 
 
