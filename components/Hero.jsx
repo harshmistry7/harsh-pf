@@ -22,12 +22,13 @@ const Hero = () => {
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Software Developer
+              Data Engineer
             </div>
             <h1 className="h1">Hello, My Name is Harsh Mistry</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              Brief description with insights into myself, my vocational
-              journey, and what i engage in professionaly.
+              Data Engineer experienced in designing ETL/ELT pipelines, data
+              quality frameworks and cloud-native data solutions using
+              PySpark, Airflow and AWS services.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -37,7 +38,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <a
-                href="/hero/Harsh_Mistry.pdf"
+                href="/hero/Harsh_Mistry_Data_Engineer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

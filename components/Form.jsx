@@ -49,49 +49,49 @@ const Form = () => {
       <form className="flex flex-col gap-y-4" onSubmit={handleSubmit}>
         {/* Name Input */}
         <div className="relative flex items-center">
-          <Input 
-            type="text" 
-            id="name" 
-            name="name" 
-            placeholder="Name" 
-            required 
+          <Input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
           />
           <User className="absolute right-6" size={20} />
         </div>
 
         {/* Email Input */}
         <div className="relative flex items-center">
-          <Input 
-            type="email" 
-            id="email" 
-            name="email" 
-            placeholder="Email" 
-            required 
+          <Input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
           />
           <MailIcon className="absolute right-6" size={20} />
         </div>
 
         {/* Message Input */}
         <div className="relative flex items-center">
-          <Textarea 
-            id="message" 
-            name="message" 
-            placeholder="Type Your Message Here" 
-            required 
+          <Textarea
+            id="message"
+            name="message"
+            placeholder="Type Your Message Here"
+            required
           />
           <MessageSquare className="absolute top-4 right-6" size={20} />
         </div>
 
         {/* Hidden API Key */}
-        <input 
-          type="hidden" 
-          name="apikey" 
-          value="85dc48e0-9dab-464a-a14b-1d6885205306" 
+        <input
+          type="hidden"
+          name="apikey"
+          value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY}
         />
 
         {/* Button */}
         <Button type="submit" className="flex items-center max-w-[166px] gap-x-1">
-          Let's Talk 
+          Let's Talk
           <ArrowRightIcon size={20} />
         </Button>
       </form>
@@ -103,8 +103,8 @@ const Form = () => {
             <p className={`text-lg font-semibold ${isSuccess ? "text-green-500" : "text-red-500"}`}>
               {modalMessage}
             </p>
-            <button 
-              onClick={closeModal} 
+            <button
+              onClick={closeModal}
               className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
             >
               Close
