@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Info, FileText, Paperclip, ExternalLink, ArrowLeft, Github } from "lucide-react";
+import { Info, FileText, Paperclip, ExternalLink, ArrowLeft, Code } from "lucide-react";
 
 const statusStyles = {
   Live: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300",
@@ -154,7 +154,7 @@ const ProjectDetails = ({ project }) => {
               )}
               {github && (
                 <a href={github} target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline inline-flex items-center gap-x-1.5">
-                  <Github size={13} /> GitHub Repository
+                  <Code size={13} /> GitHub Repository
                 </a>
               )}
               {!link && !github && <span className="text-sm text-muted-foreground">No links available.</span>}

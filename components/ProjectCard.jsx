@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardHeader } from "./ui/card";
-import { Github, Link2Icon, ArrowRight } from "lucide-react";
+import { Code, Link2Icon, ArrowRight } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 const ProjectCard = ({ project }) => {
@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
                 onClick={(e) => e.stopPropagation()}
                 className="bg-secondary w-[54px] h-[54px] rounded-full flex justify-center items-center scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-300"
               >
-                <Github className="text-white" />
+                <Code className="text-white" />
               </Link>
             )}
           </div>
