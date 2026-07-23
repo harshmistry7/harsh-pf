@@ -4,12 +4,19 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { User, MailIcon, ArrowRightIcon, MessageSquare } from 'lucide-react';
+import { User, MailIcon, ArrowRightIcon, MessageSquare, CheckCircle2, XCircle, X } from 'lucide-react';
+import { motion, AnimatePresence } from "framer-motion";
 
 const Form = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false); // State for modal visibility
-  const [modalMessage, setModalMessage] = useState(""); // State for modal message
-  const [isSuccess, setIsSuccess] = useState(false); // State to differentiate success and error
+  const [toast, setToast] = useState(null); // null or { message, type }
+
+  const showToast = (message, type) => {
+    setToast({ message, type });
+    // Auto-dismiss after 4 seconds
+    setTimeout(() => {
+      setToast(null);
+    }, 4000);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent default form submission
@@ -25,23 +32,14 @@ const Form = () => {
       const result = await response.json();
 
       if (result.success) {
-        setModalMessage("Your message has been sent successfully!");
-        setIsSuccess(true);
-        form.reset();
+        showToast("Your message has been sent successfully!", "success");
+        e.target.reset();
       } else {
-        setModalMessage(result.message || "Something went wrong. Please try again.");
-        setIsSuccess(false);
+        showToast(result.message || "Something went wrong. Please try again.", "error");
       }
     } catch (error) {
-      setModalMessage("An error occurred. Please try again later.");
-      setIsSuccess(false);
+      showToast("An error occurred. Please try again later.", "error");
     }
-
-    setIsModalOpen(true); // Open the modal after handling the submission
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false); // Close the modal
   };
 
   return (
@@ -96,22 +94,36 @@ const Form = () => {
         </Button>
       </form>
 
-      {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-md shadow-md text-center">
-            <p className={`text-lg font-semibold ${isSuccess ? "text-green-500" : "text-red-500"}`}>
-              {modalMessage}
+      {/* Toast Notification */}
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3.5 bg-background dark:bg-card border border-border rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.08)] backdrop-blur-sm select-none max-w-sm"
+          >
+            {toast.type === "success" ? (
+              <CheckCircle2 className="text-green-500 shrink-0" size={20} />
+            ) : (
+              <XCircle className="text-red-500 shrink-0" size={20} />
+            )}
+            
+            <p className="text-sm font-medium text-foreground leading-snug pr-2">
+              {toast.message}
             </p>
+
             <button
-              onClick={closeModal}
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+              onClick={() => setToast(null)}
+              className="text-muted-foreground hover:text-foreground hover:bg-muted p-1 rounded-lg transition-colors shrink-0"
+              aria-label="Dismiss Notification"
             >
-              Close
+              <X size={14} />
             </button>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

@@ -11,9 +11,14 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",  // tighter on < 360px
+        xs: "1rem",
+        sm: "2rem",
+      },
     },
     screens: {
+      xs: '360px', // Extra small screens — minimum supported viewport
       sm: '640px', // Small screens (phones)
       md: '768px', // Medium screens (tablets)
       lg: '1024px', // Large screens (laptops)

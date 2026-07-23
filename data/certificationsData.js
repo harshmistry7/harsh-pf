@@ -5,6 +5,7 @@ const certifications = [
     year: "2026",
     link: "https://www.credly.com/badges/fe751750-4865-4d1e-93dd-5cf626544115/public_url",
     imgPath: "/certificates/aws-certified-data-engineer-associate.png",
+    
   },
   {
     title: "AWS Certified AI Practitioner (AIF-C01)",

@@ -26,11 +26,11 @@ const Header = () => {
 
   return (
     <header
-    className={`
+      className={`
       ${isScrolled ? 'py-4 bg-white shadow-lg dark:bg-accent ' : 'py-6 dark:bg-transparent'} 
       ${pathname === '/' ? 'bg-[#fef9f5]' : ''} sticky top-0 z-30 transition-all
     `}
-  >
+    >
       <div className="container mx-auto ">
         <div className="flex justify-between item-center">
           <Logo />

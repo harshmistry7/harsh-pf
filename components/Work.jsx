@@ -2,240 +2,23 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 
-//import swipper component
-
-//import swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
-//import required modules
-import {Pagination} from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 
-//components
 import ProjectCard from "./ProjectCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// src/data/projectsData.js
-export const projectData = [
-  {
-    image: "/work/1.png",
-    category: "next js",
-    name: "Digital Business",
-    slug: "digital-business",
-    description: "Your One-Stop Solution for Digital Transformation",
-    link: "https://digital-buisness.vercel.app/",
-    github: "https://github.com/harshmistry7/Digital-Buisness.git",
-    status: "Live",
-    longDescription: [
-      "Digital Business is a modern full-stack web application built with Next.js, designed to help companies establish and strengthen their digital presence.",
-      "The platform provides a comprehensive suite of tools for digital transformation, including analytics dashboards, content management, and customer engagement features.",
-    ],
-    keywords: ["Next.js", "Digital Transformation", "Business"],
-    techStack: ["Next.js", "Tailwind CSS", "Vercel"],
-    keyFeatures: [
-      {
-        title: "Modern UI",
-        points: ["Clean and responsive interface built with Tailwind CSS."],
-      },
-      {
-        title: "Performance Optimized",
-        points: ["Server-side rendering and static generation for fast load times."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-  {
-    image: "/work/4.png",
-    category: "next js",
-    name: "Portfolio Website",
-    slug: "portfolio-website",
-    description: "Your Online Portfolio Showcase",
-    link: "https://www.harshmistry.tech",
-    github: "",
-    status: "Live",
-    longDescription: [
-      "A personal portfolio website built with Next.js and Tailwind CSS to showcase projects, skills, and professional experience.",
-    ],
-    keywords: ["Portfolio", "Next.js", "Personal Brand"],
-    techStack: ["Next.js", "Tailwind CSS", "Vercel"],
-    keyFeatures: [
-      {
-        title: "Responsive Design",
-        points: ["Fully responsive across all screen sizes."],
-      },
-      {
-        title: "Dark Mode",
-        points: ["Supports light and dark themes."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-  {
-    image: "/work/5.png",
-    category: "HTML",
-    name: "Zone",
-    slug: "zone",
-    description: "A Platform for Streamlining Drone Operations",
-    link: "https://harshmistry7.github.io/Zone/",
-    github: "https://github.com/harshmistry7/Zone.git",
-    status: "Completed",
-    longDescription: [
-      "Zone is a web platform designed to simplify and streamline drone operations for businesses and hobbyists.",
-      "The platform provides tools for flight planning, compliance checking, and operational management.",
-    ],
-    keywords: ["Drone", "Operations", "HTML", "CSS"],
-    techStack: ["HTML", "CSS", "JavaScript"],
-    keyFeatures: [
-      {
-        title: "Flight Planning",
-        points: ["Interactive map-based flight path planning."],
-      },
-      {
-        title: "Compliance Tools",
-        points: ["Built-in checks for airspace regulations."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-  {
-    image: "/work/7.png",
-    category: "next js",
-    name: "Transformik",
-    slug: "transformik",
-    description: "AI-Powered Solutions for Business Transformation",
-    link: "https://www.transformik.com/",
-    github: "",
-    status: "Live",
-    longDescription: [
-      "Transformik is an AI-powered platform that helps businesses automate workflows, gain insights from data, and accelerate digital transformation.",
-    ],
-    keywords: ["AI", "Business", "Automation", "Next.js"],
-    techStack: ["Next.js", "AI/ML", "Tailwind CSS", "Vercel"],
-    keyFeatures: [
-      {
-        title: "AI Automation",
-        points: ["Automates repetitive business workflows using AI."],
-      },
-      {
-        title: "Data Insights",
-        points: ["Provides actionable insights from business data."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-  {
-    image: "/work/8.png",
-    category: "react js",
-    name: "Nexcent",
-    slug: "nexcent",
-    description: "Empowering Local Businesses with Smart Digital Growth",
-    link: "https://www.transformik.com/",
-    github: "",
-    status: "Completed",
-    longDescription: [
-      "Nexcent is a React-based platform designed to help local businesses grow their digital footprint through smart tools and integrations.",
-    ],
-    keywords: ["React", "Local Business", "Digital Growth"],
-    techStack: ["React", "CSS", "JavaScript"],
-    keyFeatures: [
-      {
-        title: "Business Dashboard",
-        points: ["Centralized dashboard for managing digital assets."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-  {
-    image: "/work/2.png",
-    category: "react js",
-    name: "The Branded Sapiens",
-    slug: "the-branded-sapiens",
-    description: "Empowering Social Media Strategies for TBS, a Leading Marketing Agency",
-    link: "https://www.thebrandedsapiens.com/",
-    github: "https://github.com/harshmistry7/TBS.git",
-    status: "Live",
-    longDescription: [
-      "The Branded Sapiens is a marketing agency website built with React, showcasing the agency's services, portfolio, and social media strategy offerings.",
-    ],
-    keywords: ["React", "Marketing", "Social Media", "Agency"],
-    techStack: ["React", "CSS", "JavaScript"],
-    keyFeatures: [
-      {
-        title: "Service Showcase",
-        points: ["Highlights the agency's key services and offerings."],
-      },
-      {
-        title: "Portfolio Gallery",
-        points: ["Displays past client work with rich visuals."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-  {
-    image: "/work/3.png",
-    category: "HTML",
-    name: "Cyber Security Club ADIT",
-    slug: "cyber-security-club-adit",
-    description: "Your One-Stop Shop for Cybersecurity Resources",
-    link: "https://harshmistry7.github.io/cscadit/",
-    github: "https://github.com/harshmistry7/cscadit.git",
-    status: "Completed",
-    longDescription: [
-      "A static website for the Cyber Security Club at ADIT college, providing resources, event listings, and information about cybersecurity topics.",
-    ],
-    keywords: ["Cybersecurity", "HTML", "College Club"],
-    techStack: ["HTML", "CSS", "JavaScript"],
-    keyFeatures: [
-      {
-        title: "Resource Hub",
-        points: ["Curated cybersecurity learning resources and tools."],
-      },
-      {
-        title: "Event Listings",
-        points: ["Displays upcoming club events and workshops."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-  {
-    image: "/work/6.png",
-    category: "HTML",
-    name: "Graphixcy",
-    slug: "graphixcy",
-    description: "Your Visual Identity Architect",
-    link: "https://harshmistry7.github.io/resume/",
-    github: "https://github.com/harshmistry7/resume.git",
-    status: "Completed",
-    longDescription: [
-      "Graphixcy is a visual identity and branding showcase built with HTML and CSS, demonstrating design capabilities and creative direction.",
-    ],
-    keywords: ["Design", "Branding", "HTML", "CSS"],
-    techStack: ["HTML", "CSS", "JavaScript"],
-    keyFeatures: [
-      {
-        title: "Brand Showcase",
-        points: ["Displays visual identity work including logos and typography."],
-      },
-    ],
-    keyIntegrations: [],
-    screenshots: [],
-  },
-];
-
+import { projectData } from "@/data/projectsData";
+export { projectData };
 
 const Work = () => {
   return (
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
         {/* text */}
-        <div className=" max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
+        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
             Highlights of data engineering projects: scalable ETL/ELT, feature
@@ -245,28 +28,24 @@ const Work = () => {
             <Button>All Projects</Button>
           </Link>
         </div>
+
         {/* slider */}
         <div className="xl:max-w-[1000px] xl:absolute right-0 top-0">
           <Swiper
-            className="h-[520px] "
             slidesPerView={1}
             breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
+              640: { slidesPerView: 2 },
             }}
             spaceBetween={30}
             modules={[Pagination]}
-            pagination={{ clickable: "true" }}
+            pagination={{ clickable: true }}
+            className="!pb-12"
           >
-            {/* show only 4 proejcts for the slides */}
-            {projectData.slice(0, 4).map((project, index) => {
-              return (
-                <SwiperSlide key={index}>
-                  <ProjectCard project={project} />
-                </SwiperSlide>
-              );
-            })}
+            {projectData.slice(0, 4).map((project, index) => (
+              <SwiperSlide key={index} className="h-auto">
+                <ProjectCard project={project} />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
