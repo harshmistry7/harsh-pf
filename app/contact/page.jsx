@@ -1,9 +1,50 @@
 import Form from "@/components/Form";
 import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
 
+export const metadata = {
+  title: "Contact Harsh Mistry | harshmistry | harshmisty",
+  description:
+    "Get in touch with Harsh Mistry (harshmistry / harshmisty), Software Developer and Data Engineer. Let's chat about collaboration opportunities in web development, data pipelines, and AI integrations.",
+  alternates: {
+    canonical: "https://harsh-mistry.vercel.app/contact",
+  },
+  openGraph: {
+    title: "Contact Harsh Mistry (harshmistry / harshmisty)",
+    description:
+      "Get in touch with Harsh Mistry (harshmistry / harshmisty) for software development and data engineering opportunities.",
+    url: "https://harsh-mistry.vercel.app/contact",
+    type: "website",
+  },
+};
+
 const Contact = () => {
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Harsh Mistry",
+    "description": "Contact details and communication form for Harsh Mistry (harshmistry / harshmisty).",
+    "url": "https://harsh-mistry.vercel.app/contact",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Harsh Mistry",
+      "alternateName": ["harshmistry", "harshmisty"],
+      "jobTitle": "Software Developer & Data Engineer",
+      "email": "harshmistryarm@gmail.com",
+      "telephone": "+91 7016400310",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Surat",
+        "addressCountry": "India"
+      }
+    }
+  };
+
   return (
     <section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }}
+      />
       <div className="container mx-auto">
         {/* text & illustration */}
         <div className='grid xl:grid-cols-2 pt-12 xl:h-[480px] mb-6 xl:mb-24'>

@@ -1,0 +1,49 @@
+# Harsh Mistry (harshmistry / harshmisty)
+
+Professional Freelance Software Developer and Data Engineer specializing in custom Enterprise Resource Planning (ERP) systems, full-stack web applications, automated business workflows, and robust ETL/ELT pipelines.
+
+## Core Keywords
+- Freelance ERP Developer
+- ERP Projects
+- Custom ERP Systems
+- Enterprise Resource Planning
+- Freelance Software Developer
+- Harsh Mistry
+- harshmistry
+- harshmisty
+- Software Developer
+- Data Engineer
+
+## Alternate Names
+- harshmistry
+- harshmisty
+
+## Tech Stack
+- **Enterprise Solutions**: Custom ERP systems, inventory managers, automated business dashboards, CRM databases
+- **Languages**: Python, Java, JavaScript, PySpark
+- **Frameworks & Libraries**: Next.js, React, Node.js, Spring Boot
+- **Data Engineering**: Apache Airflow, PySpark, AWS Glue, ETL/ELT
+- **Cloud & DevOps**: AWS Services, Vercel, Docker
+
+## Key Projects
+1. **Digital Business**: Full-stack Next.js app for digital transformation tracking.
+   - [Live Link](https://digital-buisness.vercel.app/)
+   - [GitHub](https://github.com/harshmistry7/Digital-Buisness.git)
+2. **Portfolio Website**: Personal portfolio showcasing capabilities.
+   - [Live Link](https://www.harshmistry.tech)
+3. **Zone**: Drone operation scheduling and airspace compliance tracker.
+   - [Live Link](https://harshmistry7.github.io/Zone/)
+   - [GitHub](https://github.com/harshmistry7/Zone.git)
+4. **Transformik**: AI-powered business workflow automation.
+   - [Live Link](https://www.transformik.com/)
+5. **The Branded Sapiens**: Agency presentation and portfolio management.
+   - [Live Link](https://www.thebrandedsapiens.com/)
+   - [GitHub](https://github.com/harshmistry7/TBS.git)
+
+## Contact Information
+- **Email**: harshmistryarm@gmail.com
+- **Phone**: +91 7016400310
+- **Location**: Surat, India
+- **GitHub**: https://github.com/harshmistry7
+- **LinkedIn**: https://www.linkedin.com/in/harsh-mistry7/
+- **Portfolio Website**: https://harsh-mistry.vercel.app

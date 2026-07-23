@@ -85,6 +85,7 @@ const Hero = () => {
               <DevImg
                 containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom "
                 imgSrc="/hero/developer.png"
+                alt="Harsh Mistry (harshmisty / harshmistry) - Software Developer & Data Engineer"
               />
             </div>
           </div>

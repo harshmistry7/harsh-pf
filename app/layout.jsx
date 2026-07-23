@@ -8,12 +8,19 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("https://harsh-mistry.vercel.app"),
-  title: "Harsh Mistry | Software Developer | AI & Web Enthusiast",
+  title: "Harsh Mistry (harshmistry / harshmisty) | Freelance ERP Developer | Software Developer | Data Engineer",
   description:
-    "Portfolio of Harsh Mistry — a passionate Software Developer specializing in full-stack web development, AI/ML integration, and cloud-based solutions. Explore my projects, technical skills, and innovative approach to building modern digital experiences.",
+    "Official portfolio of Harsh Mistry (harshmistry / harshmisty) — a passionate Freelance Software Developer & Data Engineer specializing in custom ERP solutions, full-stack web applications, and data pipeline integrations.",
   keywords: [
     "Harsh Mistry",
+    "harshmistry",
+    "harshmisty",
+    "Freelance ERP Developer",
+    "ERP Developer",
+    "Custom ERP Solutions",
+    "Enterprise Resource Planning",
     "Software Developer",
+    "Data Engineer",
     "Full Stack Developer",
     "AI Developer",
     "Machine Learning",
@@ -34,9 +41,9 @@ export const metadata = {
     canonical: "https://harsh-mistry.vercel.app",
   },
   openGraph: {
-    title: "Harsh Mistry | Software Developer Portfolio",
+    title: "Harsh Mistry (harshmistry / harshmisty) | Freelance ERP & Software Portfolio",
     description:
-      "Discover the portfolio of Harsh Mistry — showcasing expertise in full-stack web development, AI/ML projects, and cloud-based solutions.",
+      "Discover the portfolio of Harsh Mistry (harshmistry / harshmisty) — showcasing expertise in freelance custom ERP systems, full-stack web development, and data engineering.",
     url: "https://harsh-mistry.vercel.app",
     siteName: "Harsh Mistry Portfolio",
     images: [
@@ -52,9 +59,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Harsh Mistry | Software Developer | AI & Web Enthusiast",
+    title: "Harsh Mistry (harshmistry / harshmisty) | Freelance ERP Developer Portfolio",
     description:
-      "Explore Harsh Mistry’s portfolio featuring AI/ML projects, web development, and cloud-based solutions built with modern technologies.",
+      "Explore Harsh Mistry’s portfolio featuring freelance custom ERP development, AI/ML workflows, and cloud-based data solutions.",
     images: ["https://harsh-mistry.vercel.app/og-image.jpg"],
     creator: "@harshmistry",
   },
@@ -72,11 +79,12 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Harsh Mistry",
+    alternateName: ["harshmistry", "harshmisty"],
     url: "https://harsh-mistry.vercel.app",
     image: "https://harsh-mistry.vercel.app/og-image.jpg",
-    jobTitle: "Software Developer",
+    jobTitle: "Freelance ERP Developer & Data Engineer",
     description:
-      "Software Developer passionate about Full Stack Development, AI/ML, and Cloud-based solutions.",
+      "Freelance Software Developer specializing in Custom ERP Systems, Full Stack Web Development, and Data Engineering solutions.",
     sameAs: [
       "https://github.com/harshmistry7",
       "https://www.linkedin.com/in/harsh-mistry7/",
@@ -87,7 +95,11 @@ export default function RootLayout({ children }) {
       name: "Harsh Mistry Portfolio",
     },
     knowsAbout: [
+      "Custom ERP Systems",
+      "Enterprise Resource Planning",
+      "Freelance Software Development",
       "Full Stack Development",
+      "Data Engineering",
       "Artificial Intelligence",
       "Machine Learning",
       "React",
@@ -104,6 +116,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Harsh Mistry Portfolio",
+    alternateName: ["harshmistry", "harshmisty"],
     url: "https://harsh-mistry.vercel.app",
     potentialAction: {
       "@type": "SearchAction",
@@ -111,7 +124,7 @@ export default function RootLayout({ children }) {
       "query-input": "required name=search_term_string",
     },
     description:
-      "Official portfolio website of Harsh Mistry — showcasing projects in web development, AI/ML, and cloud-based applications.",
+      "Official portfolio website of Harsh Mistry (harshmistry / harshmisty) — showcasing custom ERP systems, freelance web development, AI/ML, and cloud-based applications.",
     publisher: {
       "@type": "Person",
       name: "Harsh Mistry",

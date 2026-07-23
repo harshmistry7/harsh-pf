@@ -10,9 +10,9 @@ import {
 const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Full Stack Development ",
+    title: "Freelance ERP & Web Apps",
     description:
-      "I build fast, scalable, and secure web applications from end to end. From responsive frontends and robust backend APIs to databases, authentication, and cloud deployment, I create complete solutions that are designed for performance, maintainability, and business growth."
+      "I build custom Enterprise Resource Planning (ERP) systems, CRM portals, and scalable web applications. From responsive frontends and secure back-end APIs to enterprise databases and cloud deployment, I deliver end-to-end systems tailored for business growth."
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
